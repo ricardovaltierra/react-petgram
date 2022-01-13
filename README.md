@@ -1,7 +1,7 @@
-## curso-platzi-react-avanzado ⚛️
+## Petgram (from Platzi - Miguel Angel Durán React's Teacher)
 
-**¡Sígueme en Youtube para más contenido de React y Javascript!** 👉 https://www.youtube.com/midudev
+Here you will soon find a useful desription:
 
-**¡Sígueme en Twitch para streams sobre desarrollo web!** 👉 https://www.twitch.tv/midudev
-
-Repositorio con el código del [Curso Avanzado de React de Platzi](https://platzi.com/cursos/react-avanzado/)
+- About the application
+- The way you can clone and set up the repo
+- And how can you contribute to the project (greatly appreciated)
