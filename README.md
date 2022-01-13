@@ -1,4 +1,4 @@
-## Petgram (from Platzi - Teacher)
+## Petgram (from Platzi)
 
 Here you will find soon a useful desription:
 
