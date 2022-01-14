@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { MdFavoriteBorder, MdFavorite } from 'react-icons/md'
 import { Button } from './styles'
 
