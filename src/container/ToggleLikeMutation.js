@@ -4,7 +4,7 @@ import { Mutation } from 'react-apollo'
 
 const LIKE_PHOTO = gql`
   mutation likePhoto($input: LikePhoto!) {
-    likeAnonymousPhoto(input: $input) {
+    likePhoto(input: $input) {
       id,
       liked,
       likes

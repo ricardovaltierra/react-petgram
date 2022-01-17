@@ -3,13 +3,7 @@ import { MdFavoriteBorder, MdFavorite } from 'react-icons/md'
 import { Button } from './styles'
 
 export const FavButton = ({ liked, likes, onClick }) => {
-  console.log('liked ?', liked)
-  const Icon = MdFavoriteBorder
-
-  if (liked) {
-    Icon = MdFavorite
-  }
-
+  const Icon = liked ? MdFavorite : MdFavoriteBorder
 
   return (
     <Button onClick={onClick}>
