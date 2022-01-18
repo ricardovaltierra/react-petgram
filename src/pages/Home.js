@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { ListOfPhotoCards } from '../container/ListOfPhotoCards'
 import { ListOfCategories } from '../components/ListOfCategories'
 
-export const Home = ({ id }) => {
+const HomePage = ({ id }) => {
   return (
     <Fragment>
       <ListOfCategories />
@@ -10,3 +10,7 @@ export const Home = ({ id }) => {
     </Fragment>
   )
 }
+
+export const Home = React.memo(HomePage, (prevProps, props) => {
+  return prevProps.id === props.id
+})
