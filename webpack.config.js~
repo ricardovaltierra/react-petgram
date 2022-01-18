@@ -1,13 +1,18 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const WebpackPwaManifestPlugin = require('webpack-pwa-manifest')
 
 module.exports = {
-  mode: 'development',
   output: {
-    filename: 'app.bundle.js'
+    filename: 'app.bundle.js',
+    publicPath: '/'
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: 'src/index.html'
+    }),
+    new WebpackPwaManifestPlugin({
+      name: 'Petgram - Tu app de fotos de mascotas',
+      shortname: 'Petgram'
     })
   ],
   module: {
@@ -18,6 +23,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
+            plugins: ['@babel/plugin-syntax-dynamic-import'],
             presets: ['@babel/preset-env', '@babel/preset-react']
           }
         }
